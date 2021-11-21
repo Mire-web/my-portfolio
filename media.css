@@ -1,0 +1,32 @@
+@media screen and (max-width: 600px) {
+    #navbar ul{
+        width:100vw;
+        justify-content: space-between;
+    }    
+    #projects{
+        flex-direction: column;
+    }
+
+    footer{
+        justify-content: center;
+    }
+    #contact ul{
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-601px) {
+    #navbar{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:550px) {
+    #welcome-section h1{
+        font-size: 29px;
+    }
+    #contact h1{
+        font-size: 29px;
+    }
+}

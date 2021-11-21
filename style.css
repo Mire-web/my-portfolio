@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,900&display=swap');
+
+:root{
+    --color-red: rgba(255, 60, 40, 0.9);
+    --color-blue:linear-gradient(45deg, blue, red, black);
+    --color-blue2: linear-gradient(45deg, black, red, blue);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+    background-color: rgb(100, 10, 255);
+}
+
+ a{
+     text-decoration: none;
+     color: inherit;
+ }
+/* navbar*/
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--color-red);
+    position: fixed;
+    width: 100%;
+}
+
+#navbar  a{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#navbar ul{
+    display: inherit;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+#navbar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+/*welcome-section*/
+
+#welcome-section{
+    display: grid;
+    background-image: var(--color-blue);
+    height: 100vh;
+    text-align: center;
+}
+
+#welcome-section .welcome{
+    grid-area: 2/1/2/2;
+    font-size: 27px;
+}
+
+.extra{
+    font-size: 26px;
+}
+.welcome h6{
+    color: lightblue;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+}
+/*projects*/
+
+.h2 h2{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid whitesmoke;
+    
+}
+
+img{
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-tile{
+    border: 1px solid grey;
+    padding: 2px;
+    background-color: whitesmoke;
+    margin: 20px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+figcaption{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 800;
+    background-image: var(--color-blue);
+}
+
+.btn{
+    display: block;
+    padding: 10px;
+    width: fit-content;
+    background-image: var(--color-blue);
+    color: whitesmoke;
+    font-weight: 800;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    background-color: var(--color-red);
+    background-image: unset;
+    transform: translateY(1px);
+    transition: transform 0.3s ease-out;
+}
+
+#contact{
+    display: grid;
+    background-image: var(--color-blue2);
+    height: 80vh;
+    text-align: center;
+}
+
+#contact .contact{
+    grid-area: 2/1/2/2;
+    font-size: 27px;
+}
+
+#contact h6{
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#contact ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4rem;
+    width: 100%;
+    font-size: 15px;
+}
+
+#contact li{
+    list-style-type: none;
+    margin: 20px;
+    transition: transform 0.3s ease-out;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+
+#contact li:hover{
+    transform: translateY(8px);
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 0%;
+    font-weight: 100;
+    color: whitesmoke;
+}
+
+span{
+    margin-bottom: 0;
+}
+
+i{
+    margin-right: 2px;
+}
